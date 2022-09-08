@@ -1,0 +1,26 @@
+name = "workers-for-platforms-example-project"
+main = "src/index.ts"
+compatibility_date = "2022-08-15"
+
+# TODO: not supported in wrangler@d1 as of ^0.0.0-7c228171
+# [[ dispatch_namespaces ]]
+# binding = "dispatcher"
+# namespace = "workers-for-platforms-example-project"
+
+[[ unsafe.bindings ]]
+name = "dispatcher"
+namespace = "workers-for-platforms-example-project"
+type = "namespace"
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "workers-for-platforms-example-project"
+database_id = ""  # create a D1 database and fill in
+preview_database_id = ""  # create a D1 database and fill in
+
+[vars]
+DISPATCH_NAMESPACE_ACCOUNT_ID = ""  # fill in your account id
+DISPATCH_NAMESPACE_AUTH_EMAIL = ""  # fill in your account email
+# The necessary secrets are:
+# - DISPATCH_NAMESPACE_AUTH_KEY
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
