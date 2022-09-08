@@ -19,8 +19,8 @@ database_id = "74c23fe8-00c0-437d-9071-be97cfd12bf0"  # create a D1 database and
 preview_database_id = "76e16ef7-1741-4473-b48e-d5b5bef20611"  # create a D1 database and fill in
 
 [vars]
-DISPATCH_NAMESPACE_ACCOUNT_ID = ""  # fill in your account id
-DISPATCH_NAMESPACE_AUTH_EMAIL = ""  # fill in your account email
+DISPATCH_NAMESPACE_ACCOUNT_ID = "b6641681fe423910342b9ffa1364c76d"  # fill in your account id
+# DISPATCH_NAMESPACE_AUTH_EMAIL = ""  # fill in your account email
 # The necessary secrets are:
 # - DISPATCH_NAMESPACE_AUTH_KEY
 # Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
